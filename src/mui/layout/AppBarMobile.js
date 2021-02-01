@@ -28,7 +28,7 @@ const style = {
 };
 
 class AppBarMobile extends Component {
-    handleLeftIconButtonTouchTap = event => {
+    onClick = event => {
         event.preventDefault();
         this.props.toggleSidebar();
     };
@@ -41,7 +41,7 @@ class AppBarMobile extends Component {
                 titleStyle={style.title}
                 iconStyleLeft={style.icon}
                 title={title}
-                onLeftIconButtonTouchTap={this.handleLeftIconButtonTouchTap}
+                onClick={this.onClick}
             />
         );
     }
